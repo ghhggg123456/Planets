@@ -1,17 +1,27 @@
 body {
-    background-image: url("images/background2.png");
+    background-image: url("../images/backgrounds/background2.webp");
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
-a {color: blue;}
-a:hover {color: aqua;}
-a:active {color: chartreuse;}
-a:visited {color: blueviolet;}
+a {color: yellow;}
+a:visited {color: chocolate;}
+a:hover {color: orange;}
+a:active {color: orangered;}
 
 header {
-    color: white;
-    width: auto;
     text-align: center;
+    color: white;
+    background-color: #44444488;
+    padding: 30px;
+}
+
+header:hover {
+    text-align: center;
+    color: white;
+    background-color: #444444aa;
+    padding: 30px;
 }
 
 main {
@@ -20,36 +30,53 @@ main {
 }
 
 footer {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 70%;
     text-align: center;
     color: white;
-    background-color: #444444;
-    border: 2px solid gray;
-    padding: 10px;
-    margin: 5px;
+    background-color: #44444488;
+    padding: 30px;
+}
+
+footer span {
+    opacity: 50%;
+}
+
+footer:hover {
+    text-align: center;
+    color: white;
+    background-color: #444444aa;
+    padding: 30px;
 }
 
 #products {
     display: flex;
-    flex-direction: row;
-    justify-items: baseline;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .planet {
     display: flex;
+    opacity: 70%;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 500px;
+    flex-wrap: wrap;
+    width:min-content;
     background-color: #dddddd;
     border: #444444;
     padding: 10px;
     margin: 5px;
 }
 
-.photo {
-    width: 480px;
-    margin: 10px;
-    border-style: dotted;
-    border-color: gray;
+.planet:hover {
+    opacity: 85%;
+}
+
+.section {
+    padding: 10px;
+    margin: 20px;
 }
 
 #mercury {
@@ -94,11 +121,20 @@ footer {
 }
 
 #partners {
+    color: white;
     text-align: left;
-    background-color: #dddddd;
-    border: 2px solid gray;
+    background-color: #666666aa;
+    opacity: 80%;
     padding: 10px;
-    margin: 5px;
+    margin: 50px 0px 30px;
+}
+
+#partners h2 {
+    text-align: center;
+}
+
+#partners:hover {
+    opacity: 90%;
 }
 
 li:empty {
@@ -113,7 +149,7 @@ li:empty {
 }
 
 #matery {
-    background-image: url(images/background3.png);
+    background-image: url(images/backgrounds/background3.webp);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
