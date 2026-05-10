@@ -1,12 +1,20 @@
+
+a {color: blue;}
+a:hover {color: aqua;}
+a:active {color: chartreuse;}
+a:visited {color: blueviolet;}
+
 header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: auto;
     text-align: center;
+    background-color: #dddddd
 }
 
 main {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 100%;
-    text-align: center;
+    text-align: center;    
 }
 
 footer {
@@ -14,23 +22,41 @@ footer {
     text-align: center;
 }
 
+.planet {
+    height: auto;
+    column-count: 2;
+}
+
+#earth {
+    background-color: lawngreen;
+}
+
+#mercury {
+    background-color: orange;
+}
+
+#products {
+    display: grid;
+    column-count: 2;
+}
+
+#partners {
+    text-align: left;
+    background-color: #dddddd;
+}
+
+li:empty {
+    color: red;
+    list-style-type: georgian;
+    background-color: black;
+}
+
 .cursed {
     color: red;
     text-decoration: line-through;
 }
 
-a {
-    color: blue;
-}
-
-a:hover {
-    color: aqua;
-}
-
-a:active {
-    color: chartreuse;
-}
-
-a:visited {
-    color: blueviolet;
+.uncursed {
+    color: green;
+    text-decoration: underline;
 }
