@@ -1,3 +1,6 @@
+body {
+    background-image: url("images/background.png");
+}
 
 a {color: blue;}
 a:hover {color: aqua;}
@@ -6,9 +9,9 @@ a:visited {color: blueviolet;}
 
 header {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
     width: auto;
     text-align: center;
-    background-color: #dddddd
 }
 
 main {
@@ -20,20 +23,48 @@ main {
 footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
+    color: white;
+    background-color: #444444;
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 5px;
 }
 
 .planet {
     height: auto;
     column-count: 2;
+    padding: 10px;
+    margin: 5px;
 }
 
-#earth {
-    background-color: lawngreen;
+.photo {
+    width: 300px;
+    margin: 10px;
+    border-style: dotted;
+    border-color: gray;
 }
 
 #mercury {
     background-color: orange;
+    border: orangered;
+    border-style: groove;
 }
+#venus {
+    background-color: yellow;
+    border: orange;
+    border-style: groove;
+}
+#earth {
+    background-color: lawngreen;
+    border: green;
+    border-style: groove;
+}
+#mars {
+    background-color: red;
+    border: brown;
+    border-style: groove;
+}
+
 
 #products {
     display: grid;
@@ -43,6 +74,9 @@ footer {
 #partners {
     text-align: left;
     background-color: #dddddd;
+    border: 2px solid gray;
+    padding: 10px;
+    margin: 5px;
 }
 
 li:empty {
@@ -51,12 +85,3 @@ li:empty {
     background-color: black;
 }
 
-.cursed {
-    color: red;
-    text-decoration: line-through;
-}
-
-.uncursed {
-    color: green;
-    text-decoration: underline;
-}
