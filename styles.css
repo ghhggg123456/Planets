@@ -19,7 +19,7 @@ header {
 
 header:hover {
     text-align: center;
-    color: white;
+    color: #ffffff;
     background-color: #444444aa;
     padding: 30px;
 }
@@ -150,7 +150,7 @@ li:empty {
 
 #matery {
     background-image: url(images/backgrounds/background3.webp);
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Times New Roman', Times, serif
 }
 
 #matery mark {
@@ -160,17 +160,39 @@ li:empty {
 
 #matery p {
     color: white;
+    background-color: black;
     text-align: justify;
     padding: 20;
     margin: 0px 30px 10px;
 }
 
+#matery header, footer {
+    background-image: url(images/backgrounds/background2.webp);
+}
+
+#matery header h1 {
+    font-size: 50px;
+    background-color: #00000000;
+}
+
+#matery section {
+    background-color: #444444;
+    background-image: url(images/backgrounds/background1.webp);
+}
+
+body#matery {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    max-width: 1000px;
+}
+
 #matery i {
-    color:aqua
+    color:blue
 }
 
 #matery b {
-    color: lightgreen;
+    color: red;
 }
 
 #matery h1 {
@@ -181,7 +203,7 @@ li:empty {
 
 #matery img {
     float: left;
-    width: 300px;
+    width: 200px;
     margin: 20px;
 }
 
